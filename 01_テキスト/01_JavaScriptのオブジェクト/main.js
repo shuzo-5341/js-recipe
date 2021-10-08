@@ -1,17 +1,17 @@
-const hikakin = {
-  name: "ヒカキン",
-  age: 24,
-  hobbies: ["ゲーム", "動画編集", "猫と遊ぶこと"],
-  isHappy: true,
-  address: {
-    country: "日本",
-    city: "東京"
-  },
-  sayHello: function() {
-    console.log("ブンブンハロー YouTube")
-  }
+const button = document.getElementById("button")
+
+const alertMessage = function() {
+  alert("クリックしたね")
 }
 
-// 練習問題
-// hikakin オブジェクトに入っている sayHello メソッドを実行してください。
-hikakin.sayHello()
+button.onclick = alertMessage()
+
+const inputText = document.getElementById("input-text")
+const inputDate = document.getElementById("input-date")
+
+const sayHello = function() {
+  console.log("hello")
+}
+
+inputText.oninput = sayHello
+inputDate.oninput = sayHello
